@@ -128,6 +128,10 @@ Department Added Successfully!
 
 markdown
 Copy code
+![1](https://github.com/user-attachments/assets/8e016d7f-8171-4bc0-af87-ecaaf28f26b0)
+![2](https://github.com/user-attachments/assets/e9eafbfc-1b1a-4497-8ac7-91bfdcff7204)
+![3](https://github.com/user-attachments/assets/dea00f4d-1aea-4fae-9afb-09c22a9e3cae)
+![4](https://github.com/user-attachments/assets/f9bbb3e9-e354-47ff-aab7-d065d35e287b)
 
 ### 📋 View Departments  
 *(Screenshot can be placed here)*  
