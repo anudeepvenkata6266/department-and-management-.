@@ -1,25 +1,171 @@
-Abstract
+# Department Management System  
+Last Updated: This Week  
 
-This project is a C-based Department Management System that uses file handling to store and manage department records. The system allows users to add, view, search, update, and delete department details using a binary data file.
+---
 
-Features
-1. Add Department
+## ✅ Standard Supported  
+**C Standards:** C89 / C99 / C11  
 
-![WhatsApp Image 2025-11-25 at 22 30 09_e0ac6d37](https://github.com/user-attachments/assets/558d988c-524f-4bfb-b3cc-43d79bb23803)
-![WhatsApp Image 2025-11-25 at 22 30 23_370dcac2](https://github.com/user-attachments/assets/2a92a044-75d3-4e3c-8de1-884393102169)
+---
 
+## 📚 Header Files Required  
+# 📁 DATA STORAGE  
+✔ No file handling (in-memory storage)  
+✔ Uses **parallel arrays**  
+✔ Maximum records: 50 departments  
 
-2. Display Departments
+Stored fields:
+- Department Name  
+- HOD Name  
+- Faculty Count  
 
-![WhatsApp Image 2025-11-25 at 22 30 38_2319e2f2](https://github.com/user-attachments/assets/c27cabc7-ecd8-432b-a597-d7421454702b)
+---
 
-3. Search Department by ID
+## 📌 FUNCTIONAL REQUIREMENTS  
 
+### 🖥 User Interface  
+- Terminal-based CLI  
+- Clean, simple menu navigation  
+- Accepts string input (fgets)  
+- Handles empty/invalid searches gracefully  
 
-![WhatsApp Image 2025-11-25 at 22 30 50_ea875e75](https://github.com/user-attachments/assets/84201d03-b1bc-43e4-945d-973e91f1f885)
+---
 
+## 🏫 Department Management Operations  
 
-4. exit
+### ➕ Add Department  
+User enters:
 
+- Department Name  
+- HOD Name  
+- Faculty Count  
 
-![WhatsApp Image 2025-11-25 at 22 31 02_7251eed2](https://github.com/user-attachments/assets/c2a3a0f3-d8ce-4392-8c9b-dce78f6ddd85)
+Record stored using global parallel arrays.
+
+---
+
+### 📋 View All Departments  
+Displays all department records in a formatted table:
+
+ID | Department Name | HOD Name | Faculty Count
+
+yaml
+Copy code
+
+---
+
+### 🔍 Search Department  
+Search using **Department Name** (exact match).
+
+Displays:
+
+- ID  
+- Department Name  
+- HOD  
+- Faculty Count  
+
+Shows **“not found”** message if no record exists.
+
+---
+
+## 🔧 DATA MANAGEMENT  
+- Data stored in memory (not permanent)  
+- Supports up to 50 departments  
+- Allows multi-word names (via fgets)  
+- Uses `strcspn()` to remove newline characters  
+
+---
+
+## 🔄 PROGRAM FLOW  
+- Menu runs in continuous loop  
+- Clear options:
+Add Department
+
+View All Departments
+
+Search Department
+
+Exit
+
+yaml
+Copy code
+- Shows success/failure messages  
+- Exit option ends application safely  
+
+---
+
+## ▶️ Running the Program  
+
+### 1️⃣ Compile  
+gcc department.c -o department
+
+shell
+Copy code
+
+### 2️⃣ Run  
+Linux / macOS:
+./department
+
+makefile
+Copy code
+
+Windows:
+department.exe
+
+yaml
+Copy code
+
+---
+
+## 📸 Screenshots (Optional)
+
+### ➕ Add Department  
+*(Screenshot can be placed here)*  
+Enter Department Name:
+Enter HOD Name:
+Enter Faculty Count:
+Department Added Successfully!
+
+markdown
+Copy code
+
+### 📋 View Departments  
+*(Screenshot can be placed here)*  
+ID Dept Name HOD Name Faculty
+1 CSE Dr. Ramesh 40
+2 ECE Dr. Kavitha 35
+
+markdown
+Copy code
+
+### 🔍 Search Department  
+*(Screenshot can be placed here)*  
+Enter Department Name to search:
+--- Record Found ---
+ID: 1
+Department: CSE
+HOD: Dr. Ramesh
+Faculty Strength: 40
+
+yaml
+Copy code
+
+---
+
+## 📝 Notes  
+- Increase MAX_DEPTS to add more departments  
+- Be careful with trailing newline characters while using `fgets()`  
+
+---
+
+## ✨ Future Enhancements  
+- Add File Handling (binary storage)  
+- Add Update/Delete department  
+- Convert to Structure-Based Storage  
+- Add Sorting (A–Z / by faculty count)  
+- Input validation system  
+
+---
+
+## 📜 License  
+Free to use for academic and learning purposes.
