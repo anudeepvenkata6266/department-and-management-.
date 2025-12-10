@@ -1,12 +1,9 @@
-# Department Management System  
-Last Updated: This Week  
-
----
-
-## ✅ Standard Supported  
-**C Standards:** C89 / C99 / C11  
-
----
+## Abstract
+The Department Management System is a simple, menu-driven C program designed to manage basic academic department information efficiently using in-memory storage.
+It uses parallel arrays to store department name, HOD name, and faculty count, supporting up to 50 records without the need for file handling.
+The application provides an easy-to-use terminal interface that allows users to add new departments, view all existing records, and search for a department by name.
+Inputs are handled using fgets() to support multi-word names, and the program ensures smooth navigation with clear prompts, validation messages, and a continuous loop-driven menu. 
+This lightweight system is ideal for beginners learning C concepts such as arrays, strings, menu-driven design, and basic data management.
 
 ## 📚 Header Files Required  
 # 📁 DATA STORAGE  
@@ -120,21 +117,17 @@ Copy code
 ## 📸 Screenshots (Optional)
 
 ### ➕ Add Department  
-*(Screenshot can be placed here)*  
+  
 Enter Department Name:
 Enter HOD Name:
 Enter Faculty Count:
 Department Added Successfully!
 
 markdown
-Copy code
-![1](https://github.com/user-attachments/assets/8e016d7f-8171-4bc0-af87-ecaaf28f26b0)
-![2](https://github.com/user-attachments/assets/e9eafbfc-1b1a-4497-8ac7-91bfdcff7204)
-![3](https://github.com/user-attachments/assets/dea00f4d-1aea-4fae-9afb-09c22a9e3cae)
-![4](https://github.com/user-attachments/assets/f9bbb3e9-e354-47ff-aab7-d065d35e287b)
+
 
 ### 📋 View Departments  
-*(Screenshot can be placed here)*  
+
 ID Dept Name HOD Name Faculty
 1 CSE Dr. Ramesh 40
 2 ECE Dr. Kavitha 35
@@ -143,7 +136,7 @@ markdown
 Copy code
 
 ### 🔍 Search Department  
-*(Screenshot can be placed here)*  
+  
 Enter Department Name to search:
 --- Record Found ---
 ID: 1
@@ -173,3 +166,10 @@ Copy code
 
 ## 📜 License  
 Free to use for academic and learning purposes.
+markdown
+## screen shots
+![1](https://github.com/user-attachments/assets/8e016d7f-8171-4bc0-af87-ecaaf28f26b0)
+![2](https://github.com/user-attachments/assets/e9eafbfc-1b1a-4497-8ac7-91bfdcff7204)
+![3](https://github.com/user-attachments/assets/dea00f4d-1aea-4fae-9afb-09c22a9e3cae)
+![4](https://github.com/user-attachments/assets/f9bbb3e9-e354-47ff-aab7-d065d35e287b)
+
